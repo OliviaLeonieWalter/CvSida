@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/CV-css.css">
+    <link rel="stylesheet" media="print" href="css/PrintCss.css" />
+    <title>OliviaWalterCvSida-cv</title>
+    <script src="javaScript/EasterEgg.js"></script>
+</head>
+<script>
+
+    function OnClick() {
+        document.body.style.backgroundColor = "#426b4e";
+        document.getElementById("main").style.backgroundColor = "#426b4e";
+    }
+
+
+
+    const filUrl = "javaScript/cvData.json";
+    async function GetData() {
+        const response = await fetch(filUrl);
+        const data = await response.json();
+        if(response.ok){
+
+            document.getElementById("sammanfattning-innehåll").innerHTML = data[0].sammanfattningInnehåll;
+
+            document.getElementById("bolagsverket-title").innerHTML = data[1].bolagsverketTitle;
+            document.getElementById("bolagsverket-innehåll").innerHTML = data[1].bolagsverketInnehåll;
+
+            document.getElementById("lidl-title").innerHTML = data[2].lidlTitle;
+            document.getElementById("lidl-innehåll").innerHTML = data[2].lidlInnehåll;
+
+            document.getElementById("privat-pianolärare-title").innerHTML = data[3].pianolärareTitle;
+            document.getElementById("privat-pianolärare-innehåll").innerHTML = data[3].pianolärareInnehåll;
+
+            document.getElementById("edugrade-systemutvecklare-title").innerHTML = data[4].edugradeTitle;
+            document.getElementById("edugrade-systemutvecklare-innehåll").innerHTML = data[4].edugradeInnehåll;
+
+            const list = document.getElementById("kurs-lista");
+            kurslista = list.children;
+            for(let i = 0; i < kurslista.length; i++){
+                kurslista[i].innerHTML = data[4].kurserna[i];
+            }
+            
+            document.getElementById("kapellsberg-title").innerHTML = data[5].folkhögskolaTitle;
+            document.getElementById("kapellsberg-innehåll").innerHTML = data [5].folkhögskolaInnehåll;
+
+            document.getElementById("härnösands-gymnasium-title").innerHTML = data[6].gymnasiumTitle;
+            document.getElementById("härnösands-gymnasium-innehåll").innerHTML = data[6].gymnasiumInnehåll;
+
+            document.getElementById("hsandGymUF-title").innerHTML = data[7].ufTitle;
+            document.getElementById("hsandGymUF-innehåll").innerHTML = data[7].ufInnehåll;
+        }
+    }
+
+    GetData();
+
+</script>
+<body>
+    <header class="navbar">
+        <a class="logo-name" href="index.html">Olivia Walter</a>
+        <nav>
+            <ul class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="om-mig.html">Om mig</a></li>
+                <li class="current"><a href="#">CV</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="webbriktlinjer.html">Riktlinjer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="easteregg-modal">
+            <section class="easteregg-modal-window" >
+                <h2>Bajs? moget...</h2>
+                <p>(ladda om sidan för att deaktivera detta fönster)</p>
+            </section>
+        </div>
+        <article class="Cv-content">
+            <section class="smaller-sideinformation">
+                <h4 class="name">Olivia<br>Walter</h4>
+                <img onclick="OnClick()" id="picture-of-me" src="css/images/CvPhoto.JPG" alt="En bild på en tjej">
+                <section class="PersonUppgifter">
+                    <h4 class="PersonUppgifter-title">PERSONUPPGIFTER</h4>
+                    <p class="PersonUppgifter-innehåll">
+                    <strong>E-mail:</strong> Olivia.Walter.28@gmail.com <br>
+                    <strong>Telefon:</strong> 072 150 53 53<br>
+                    <strong>Ålder:</strong> 24<br>
+                    <strong>Tyska:</strong>1:a Modersmål<br>
+                    <strong>Svenska:</strong> 2:a Modersmål<br>
+                    <strong>Engelska:</strong> flytande</p>
+
+                </section>
+                <section class="Stipendier">
+                    <h4 class="Stipendier-title">STIPENDIER</h4>
+                    <p class="Stipendier-innehåll">
+                        Helge Ax:son Johnsons stiftelse Stipendie 2019<br>
+                        <br>Torsten Näsmans Musikstipendiet 2019<br>
+                        <br>Sveriges kungahus Prins Carl Gustafs stiftelses stipendiet 2016<br>
+                        <br>Kramforskulturskolans musikstipendiet 2012<br>
+                        <br>Goethe instituts språktävling (tema dikt) första plats 2012<br>
+                    </p>
+                </section>
+                <section class="kort-om-mig">
+                    <h4 class="kort-om-mig-title">KORT OM MIG</h4>
+                    <p class="kort-om-mig-innehåll">
+                        Jag är en glad tjej som alltid försöker
+                        göra sitt bästa i uppgifter och för
+                        människor, för mig finns det inget
+                        bättre än att försöka få folk i min
+                        omgivning att känna sig glada och
+                        trygga.
+                        Jag är uppvuxen I Tyskland och
+                        flyttade med min familj till Sverige
+                        2006.
+                        På min fritid brukar jag utöva mycket
+                        trädgårdsarbete, vara ute i naturen
+                        och programmera.
+                    </p>
+                </section>
+            </section>
+            <section class="bigger-mainInformation">
+                <section id="sammanfattning">
+                    <h1 class="sammanfattning-title">SAMMANFATTNING</h1>
+                    <p id="sammanfattning-innehåll"></p>
+                </section>
+                <section>
+                    <h1 class="arbetslivserfarenhet-title">ARBETSLIVSERFARENHET</h1>
+
+                    <h2 id="bolagsverket-title"></h2>
+                    <p id="bolagsverket-innehåll"></p>
+
+                    <h2 id="lidl-title"></h2>
+                    <p id="lidl-innehåll"></p>
+
+                    <h2 id="privat-pianolärare-title"></h2>
+                    <p id="privat-pianolärare-innehåll"></p>
+
+                </section>
+                <section class="utbildningar">
+                    <h1 class="utbildningar-title">UTBILDNINGAR</h1>
+
+                    <h2 id="edugrade-systemutvecklare-title"></h2>
+                    <p id="edugrade-systemutvecklare-innehåll">
+                    </p>
+                    <ul id="kurs-lista">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <h2 id="kapellsberg-title"></h2>
+                    <p id="kapellsberg-innehåll"></p>
+
+                    <h2 id="härnösands-gymnasium-title"></h2>
+                    <p id="härnösands-gymnasium-innehåll"></p>
+
+                    <h2 id="hsandGymUF-title"></h2>
+                    <p id="hsandGymUF-innehåll"></p>
+                </section>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer-icon">
+            <img src="css/images/phone.png" alt="ett telefonsymbol">
+            <p><strong>Mobil</strong><br>072 150 53 53</p>
+        </div>
+        <div class="footer-icon">
+            <img src="css/images/mail.png" alt="ett mailsymbol">
+            <p><strong>E-mail</strong><br>Olivia.Walter.28@gmail.com</p>
+            <p class="mail-text"></p>
+        </div>
+        <div class="footer-icon">
+            <a href="https://www.linkedin.com/in/olivia-walter-49b758224/">
+                <img src="css/images/linkedin.png" alt="ett LinkedInsymbol">
+            </a>
+            <p class="linkedIn"><strong>LinkedIn</strong></p>
+        </div>
+    </footer>
+</body>
+</html>

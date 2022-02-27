@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #c2f1cf;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Raleway";
+}
+/* easteregg */
+#easteregg-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: 99;
+}
+ .easteregg-modal-window{
+    position: relative;
+    background-color: #ffd9c6;
+    padding: 2em 2em;
+    width: 25em;
+    height: auto;
+    text-align: center;
+    
+}
+
+/* Navigation header properties */
+.navbar{
+    background: #a6d2b1;
+}
+.nav-items{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    padding-top: 0em;
+    padding-left: 0;
+}
+.navbar .logo-name{
+    font-size: 400%;
+}
+.navbar a{
+    margin-left: 1em;
+    font-size: 110%;
+    text-decoration: none;
+    color: black;
+}
+.navbar nav .current a{
+    font-weight: bold;
+}
+.navbar nav a:hover{
+    font-weight: bold;
+}
+
+/* Hero Section properties */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.border{
+    background-color: #ffc5db;
+    display: flex;
+    justify-content: center;
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 2em;
+    align-items: center;
+}
+.symbol-image{
+    width: 100px;
+    height: 100px;
+}
+.symbol{
+    text-align: center;
+}
+.e-mail .border{
+    margin-left: 2em;
+}
+/* Footer properties*/
+
+.footer{
+    background: #a6d2b1;
+    margin-top: auto;
+    height: 120px;
+}
+@media only screen and (min-width: 1200px) {
+
+/* Navigation header properties */
+.navbar {
+    display: flex;
+}
+ .navbar .nav-items{
+    margin: auto;
+    padding-top: 2em;
+    list-style-type: none;
+}
+
+/* Hero Section properties*/
+main{
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 25vh;
+    font-size: 150%;
+}
+.e-mail .border{
+    margin-left: 4em;
+}
+}
+

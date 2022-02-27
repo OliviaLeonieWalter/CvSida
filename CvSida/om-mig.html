@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/om-mig-css.css">
+    <title>OliviaWalterCvSida-omMig</title>
+    <script src="javaScript/EasterEgg.js"></script>
+</head>
+<script>
+    function OnClick() {
+        document.body.style.backgroundColor = "#426b4e";
+        document.getElementById("main").style.backgroundColor = "#426b4e";
+    }
+    </script>
+<body>
+    <header class="navbar">
+        <a class="logo-name" href= "index.html">Olivia Walter</a>
+        <nav>
+            <ul class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="#">Om mig</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="webbriktlinjer.html">Riktlinjer</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div id="easteregg-modal">
+        <section class="easteregg-modal-window" >
+            <h2>Bajs? moget...</h2>
+            <p>(ladda om sidan för att deaktivera detta fönster)</p>
+        </section>
+    </div>
+    <section class="hero">
+        <aside class="pictures-left overlapping">
+            <img id="ZeldaEllieBerg" class="overlapping" src="css/images/ZeldaEllieBerg.JPG" alt="katt och hund på ett berg">
+            <img id="JagGolf" class="overlapping" src="css/images/JagGolf.jpg" alt="Spelar golf">
+            <img id="Garden" class="overlapping" src="css/images/Garden.jpg" alt="en odling">
+        </aside>
+        <article class="aboutme-text">
+            <h1>Lite om mig</h1>
+            <p>Jag är en tjej på 24 år som alltid har haft intresse för data men aldrig vågat mig själv på programmering, 
+                runt julen 2020 bestämde jag mig att ta tag i min dröm och lärde mig då grunderna till HTML5, CSS och C#. 
+                Våren 2020 tentade jag av kursen programmering 1 och sökte till min nuvarande utbildning.  
+                Jag sitter gärna med programmering utanför skoltiden och skriver mindre program. Jag har även ett stort intresse för datorspel, och jobbar inom Unity med att programmera egna spel.
+                När Jag inte sitter vid datorn brukar jag spendera mycket tid med min sambo och våra två husdjur, där vi vandrar i fjällen, spenderar tid på hundgården eller testar på nya spännande aktiviteter.
+                Även Golf, trädgårdsarbete och matlagning har jag stort intresse för. 
+                Jag är född och uppvuxen i Tyskland men flyttade med min familj till Sverige 2006.  </p>
+        </article>
+        <aside class="pictures-right overlapping">
+            <img id="MeAndZelda" class="overlapping" src="css/images/MeAndZelda.JPG" alt="Tjej med katt">
+            <img id="JagOEllie" onclick="OnClick()" class="overlapping" src="css/images/JagOEllie.JPG" alt="Tjej med hund">
+            <img id="EllieBerg" class="overlapping" src="css/images/EllieBerg.JPG">
+        </aside>
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer-icon">
+        <img src="css/images/phone.png" alt="ett telefonsymbol">
+        <p><strong>Mobil:</strong><br>072 150 53 53</p>
+    </div>
+    <div class="footer-icon">
+        <img src="css/images/mail.png" alt="ett mailsymbol">
+        <p><strong>E-mail:</strong><br>Olivia.Walter.28@gmail.com</p>
+        <p class="mail-text"></p>
+    </div>
+    <div class="footer-icon">
+        <a href="https://www.linkedin.com/in/olivia-walter-49b758224/">
+            <img src="css/images/linkedin.png" alt="ett LinkedInsymbol">
+        </a>
+        <p class="linkedIn"><strong>LinkedIn</strong></p>
+    </div>
+</footer>
+</body>
+</html>

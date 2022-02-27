@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #c2f1cf;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Raleway";
+}
+/* easteregg */
+#easteregg-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    z-index: 99;
+}
+ .easteregg-modal-window{
+    position: relative;
+    background-color: #ffd9c6;
+    padding: 2em 2em;
+    width: 25em;
+    height: auto;
+    text-align: center;
+    
+}
+/* Navigation header properties */
+
+.navbar{
+    background: #a6d2b1;
+}
+.nav-items{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    padding-top: 0em;
+    padding-left: 0;
+}
+.navbar .logo-name{
+    font-size: 400%;
+}
+.navbar a{
+    margin-left: 1em;
+    font-size: 110%;
+    text-decoration: none;
+    color: black;
+}
+.navbar nav .current a{
+    font-weight: bold;
+}
+.navbar nav a:hover{
+    font-weight: bold;
+}
+
+/* Hero Section properties*/
+.hero {
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+.hero .pictures-left{
+    display: flex;
+    float: left;
+}
+#ZeldaEllieBerg, #JagGolf{
+    height: 12em; 
+}
+#Garden{
+    display: none;
+}
+.hero .aboutme-text h1{
+    background-color: #ecc8b8;
+    font-size: 150%;
+    width: 15em;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.hero .aboutme-text{
+    background-color: #ffd9c6;
+    width: 23em;
+    text-align: center;
+    margin: 2em 2em;
+    padding: 0 2em;
+}
+.hero .pictures-right{
+    display: flex;
+    float:right;
+}
+#MeAndZelda, #JagOEllie{
+    height: 12em;
+}
+#EllieBerg{
+    display: none;
+}
+/* Footer properties*/
+
+.footer{
+    background: #a6d2b1;
+    text-align: center;
+
+}
+.footer img{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 50px;
+    width: 50px;
+    background-color: #ffc5db;
+    padding: 1em;
+    border-radius: 50%;
+}
+.footer p{ 
+    margin-top: 0;
+}
+@media only screen and (min-width: 600px){
+
+    /* Navigation header properties */
+
+    .navbar a{
+        margin-left: 1em;
+    }
+    /* Hero Section properties*/
+
+    #Garden, #EllieBerg{
+        display: block;
+        height: 12em;
+    
+    }
+}
+@media only screen and (min-width: 800px){
+  
+    /* Footer Properties*/
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        place-content: space-between;
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .footer .footer-icon{
+        display: flex;
+        place-content: space-between;
+        text-align: left;
+    }
+    .footer .footer-icon p{
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+    .footer .footer-icon .linkedIn{
+        margin-top: 3em;
+        margin-left: 1em;
+    }
+}
+@media only screen and (min-width: 1550px) {
+
+    /* Navigation header properties */
+
+    .navbar {
+        display: flex;
+    }
+    .navbar .nav-items{
+    margin: auto;
+    padding-top: 2em;
+    list-style-type: none;
+    }  
+    /* Hero Section properties*/
+    
+    .hero{
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 12em;
+        margin-bottom: 7vh;
+    }
+    .hero .pictures-left, .hero .pictures-right{
+        flex-direction: column;
+    }
+    #ZeldaEllieBerg{
+        height: 18em;
+        width: 18em;
+        z-index: 3;
+    }
+    #JagGolf{
+        height: 18em;
+        width: 18em;
+        z-index: 2;
+        margin-top: -10em;
+        margin-left: -16em;
+    }
+    #Garden{
+        height: 18em;
+        width: 20em;
+        margin-top: -6em;
+    }
+    #MeAndZelda{
+        height: 18em;
+        width: 17em;
+        z-index: 3;
+    }
+    #JagOEllie{
+        height: 18em;
+        width: 18em;
+        z-index: 2;
+        margin-top: -7em;
+        margin-left: 12em;
+    }
+    #EllieBerg{
+        height: 18em;
+        width: 18em;
+        margin-top: -7em;
+    }
+     /* Footer Properties*/
+
+    .footer{
+        margin-top: auto;
+        z-index: 2;
+    }
+}
+@media only screen and (min-height: 960px){
+    .hero{
+        padding-top: 13vh;
+        padding-bottom: 13vh;
+    }
+}
+    

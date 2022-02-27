@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;700&display=swap');
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    
+    background-color: white;
+    margin: 0;
+    font-family:"Verdana";
+}
+header{
+    display: none;
+
+}
+.Cv-content .smaller-sideinformation .name{
+    font-size: 200%;
+    text-align: center;
+}
+#picture-of-me{
+    height: 250px;
+    width: 200px;
+
+}
+.Cv-content{
+    display: flex;
+    flex-direction: column;
+    margin: 2em; 
+}
+.Cv-content .smaller-sideinformation{
+    text-align: center;
+}
+.Cv-content .bigger-mainInformation h1{
+    font-size: 1.2em;
+}
+.Cv-content .bigger-mainInformation h2{
+    font-size: 1em;
+}
+.Cv-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.Cv-content p{
+  font-size: 90%;
+    
+}
+.Cv-content .smaller-sideinformation{
+    
+    text-align: left;
+    width: 250px;
+    margin-right: 1em;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.Cv-content .bigger-mainInformation{
+    padding: 0em;
+}
+.Cv-content .smaller-sideinformation .name{
+    text-align: center;
+    border-bottom: solid;
+    border-top: solid;
+    border-left: hidden;
+    border-right: hidden;
+    border-color: mediumaquamarine;
+}
+.Cv-content .smaller-sideinformation h1{
+    padding: 0.5em;
+    text-align: center;
+    border-bottom: solid;
+    border-top: solid;
+    border-left: hidden;
+    border-right: hidden;
+    border-color: mediumaquamarine;
+}
+.Cv-content .bigger-mainInformation{
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    float: right;
+}
+.Cv-content .bigger-mainInformation h1{
+    padding: 1em;
+    text-align: center;
+    border-bottom: solid;
+    border-top: solid;
+    border-left: hidden;
+    border-right: hidden;
+    border-color: mediumaquamarine;
+}
+.Cv-content .bigger-mainInformation h2{
+    text-align: center;
+}
+.Cv-content .bigger-mainInformation .tidsperiod{
+    font-weight: 100;
+}
+.privat-pianolärare-innehåll{
+    margin-bottom: 11.5em;
+}
+footer{
+    display: none;
+}

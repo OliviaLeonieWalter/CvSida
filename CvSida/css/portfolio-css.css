@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #c2f1cf;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: "Raleway";
+}
+
+/* Navigation header properties */
+.navbar{
+    background: #a6d2b1;
+}
+.nav-items{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    padding-top: 0em;
+    padding-left: 0;
+}
+.navbar .logo-name{
+    font-size: 400%;
+}
+.navbar a{
+    margin-left: 1em;
+    font-size: 110%;
+    text-decoration: none;
+    color: black;
+}
+.navbar nav .current a{
+    font-weight: bold;
+}
+.navbar nav a:hover{
+    font-weight: bold;
+}
+
+/* Hero Section properties */
+main{
+    height: auto;
+}
+.portfolio-title{
+    font-size: 400%;
+    text-align: center;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* easteregg */
+#easteregg-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.bomb-game, .shoppinglist-program, .horror-game{
+    background-color: #ffd9c6;
+    height: 19em;
+    width: 25em;
+    margin: 2em;
+    display: flex;
+    padding: 2em;
+}
+#bomb-game-image, #shoppinglist-program-image, #horror-game-image{
+    height: 300px;
+    width: 200px;
+    
+}
+.bomb-game-content, .shoppinglist-program-content, .horror-game-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5em;
+}
+/* Modal */
+#modal-bomb-game, #modal-shoppinglist-program, #modal-horror-game  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-bomb-game-window, .modal-shoppinglist-program-window, .modal-horror-game-window, .easteregg-modal-window{
+    position: relative;
+    background-color: #ffd9c6;
+    padding: 2em 2em;
+    width: 25em;
+    height: auto;
+    text-align: center;
+    
+}
+  
+.modal-bomb-game-close, .modal-shoppinglist-program-close, .modal-horror-game-close  {
+    position: absolute;
+    top: -30px;
+    right: 0px;
+}
+.modal-bomb-game-window a, .modal-shoppinglist-program-window a, .modal-horror-game-window a{
+    height: 30px;
+    width: 30px;
+    text-align:center;
+    background-color: #ffd9c6;
+    border-radius: 50%;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.bomb-game-images, .shoppinglist-program-images{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+}
+.only-fullscreen-images{
+    display: none;
+}
+
+.modal-bomb-game-window .bomb-game-images img{
+    height: 300px;
+    width: 200px;
+    margin: 1em;
+}
+.modal-bomb-game-window p, .modal-shoppinglist-program-window  p,  .modal-horror-game-window  p{
+      width: 22em;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+      font-size: 120%;
+}
+#modal-bomb-game:not(:target), #modal-shoppinglist-program:not(:target), #modal-horror-game:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
+.modal-shoppinglist-program-window  .shoppinglist-program-images img{
+    height: 240px;
+    width: auto;
+    margin: 1em;
+}
+.modal-horror-game-window .horror-game-images{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+}  
+.modal-horror-game-window .horror-game-images img{
+    height: 200px;
+    width: auto;
+    margin: 0.3em;
+}
+.modal-horror-game-window  p{
+      margin-bottom: 0;
+}
+
+/* Footer properties*/
+.footer{
+    background: #a6d2b1;
+    text-align: center;
+
+}
+.footer img{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: 50px;
+    width: 50px;
+    background-color: #ffc5db;
+    padding: 1em;
+    border-radius: 50%;
+}
+.footer p{ 
+    margin-top: 0;
+}
+@media only screen and (min-width: 980px){
+
+/* Hero Section properties*/
+
+.only-fullscreen-images{
+    display: block;
+}
+
+/*Modal*/
+.modal-bomb-game-window {
+    width: 50em;
+}
+.modal-shoppinglist-program-window{
+    width: 45em;
+}
+.modal-horror-game-window{
+    width: 55em;
+}
+.modal-bomb-game-close, .modal-shoppinglist-program-close, .modal-horror-game-close {
+    right: -30px;
+}
+
+/* Footer Properties*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    place-content: space-between;
+    padding-left: 5em;
+    padding-right: 5em;
+    }
+.footer .footer-icon{
+    display: flex;
+    place-content: space-between;
+    text-align: left;
+}
+.footer .footer-icon p{
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.footer .footer-icon .linkedIn{
+    margin-top: 3em;
+    margin-left: 1em;
+}
+}
+@media only screen and (min-width: 1560px) {
+
+/* Navigation header properties */
+.navbar {
+    display: flex;
+}
+.navbar .nav-items{
+    margin: auto;
+    padding-top: 2em;
+    list-style-type: none;
+}  
+
+/* Hero Section properties*/
+.projects{
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+/* Footer Properties*/
+.footer{
+    margin-top: auto;
+    z-index: 2;
+}
+}
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portfolio-css.css">
+    <title>OliviaWalterCvSida-portfolio</title>
+    <script src="javaScript/EasterEgg.js"></script>
+</head>
+<script>
+    function OnClick() {
+    document.body.style.backgroundColor = "#426b4e";
+    document.getElementById("main").style.backgroundColor = "#426b4e";
+}
+</script>
+<body>
+    <header class="navbar">
+        <a class="logo-name" href= "index.html">Olivia Walter</a>
+        <nav>
+            <ul class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="om-mig.html">Om mig</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li class="current"><a href="#">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="webbriktlinjer.html">Riktlinjer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div id="easteregg-modal">
+            <section class="easteregg-modal-window" >
+                <h2>Bajs? moget...</h2>
+                <p>(ladda om sidan för att deaktivera detta fönster)</p>
+            </section>
+        </div>
+        <h1 class="portfolio-title" onclick="OnClick()" >Portfolio</h1>
+        <article class="projects">
+            <div class="bomb-game">
+                <img id="bomb-game-image" src="css/images/Game-1.PNG" alt="ett spel med fyra personer och en bomb">
+                <section class="bomb-game-content">
+                    <h1>Don't Catch The Bomb</h1>
+                    <p>Don't Catch The Bomb är ett minigame som jag håller på att programmera just nu.
+                        Jag började med detta spel då jag ville skapa ett mindre spel
+                        till 100% som inte tar för långt tid. Projektet skapades även för att
+                        skapa en plan och hålla sig till en deadline.
+                    </p>
+                    <a href="#modal-bomb-game">mer info och bilder</a>
+                </section>
+                <div id="modal-bomb-game">
+                    <section class="modal-bomb-game-window">
+                        <a class="modal-bomb-game-close" href="#">X</a>
+                        <div class="bomb-game-images">
+                            <img src="css/images/Game-1.PNG" alt="Ett spel med fyra personer och en bomb">
+                            <img src="css/images/Game-3.PNG" alt="ett spel med fyra personer och en bomb under spelets lopp">    
+                            <img class="only-fullscreen-images" src="css/images/Game-4.PNG" alt="ett spel med fyra personer och en bomb, en spelare exploderat">  
+                            <img class="only-fullscreen-images" src="css/images/Game-5.PNG" alt="ett spel med fyra personer och en bomb under spelets lopp med liv-ui">  
+                        </div>
+                        <h2>Don't Catch The Bomb</h2>
+                        <p>Don't Catch The Bomb är ett minigame som jag håller på att programmera just nu.
+                            Jag började med detta spel då jag ville skapa ett mindre spel till 100% som inte tar
+                            för långt tid. Projektet skapades även för att skapa en plan och hålla sig till
+                            en deadline.<br>
+                            Spelet går ut på att man skickar bomben vidare medan bombens timer tickar, den som
+                            håller i bomben när timern har gått ut exploderar och tappar ett liv, tappar man tre
+                            liv så är man ute och har förlorat. Don't Catch The Bomb kan spelas 1-4 spelare, där
+                            överblivande spelare ersätts av AI. Alla pixelart objekt är skapade av mig.</p>
+                    </section>
+                </div>
+            </div>
+            <div class="shoppinglist-program">
+                <img id="shoppinglist-program-image" src="css/images/Shoppinglist-cropped.PNG"
+                    alt="ett program med en inköpslista">
+                <section class="shoppinglist-program-content">
+                    <h1>Shoppinglist-program</h1>
+                    <p>Shoppinglist-programmet skapade jag huvudsakligen för att programmera ett eget
+                        program utan anvisningar samt för att lära mig nedsparing i xml format och
+                        användning av en SQL-databas.
+                    </p>
+                    <a href="#modal-shoppinglist-program">mer info och bilder</a>
+                </section>
+                <div id="modal-shoppinglist-program">
+                    <section class="modal-shoppinglist-program-window">
+                        <a class="modal-shoppinglist-program-close" href="#">X</a>
+                        <div class="shoppinglist-program-images">
+                            <img src="css/images/Shoppinglist.PNG" alt="ett program med en inköpslista">
+                            <img class="only-fullscreen-images" src="css/images/Shoppinglist-2.PNG" alt="En inköpslista på mailen">      
+                        </div>
+                        <h2>Shoppinglist-program</h2>
+                        <p>Shoppinglist-programmet skapade jag huvudsakligen för att programmera ett eget
+                            program utan anvisningar samt för att lära mig nedsparing i xml format och
+                            användning av en SQL-databas.<br>
+                            Shoppinglist-program är som namnet redan avslöjer ett program där man kan skapa en
+                            inköpslista, man kan även spara recept som man sen i sin helhet kan lägga tillsammans på
+                            listan. Sen när man är klar med listan så mailas den till ens mail.
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div class="horror-game">
+                <img id="horror-game-image" src="css/images/horrorgame-1-cropped.png"
+                    alt="En mörk bild i en stad av ett 3D-spel">
+                <section class="horror-game-content">
+                    <h1>Last Walk Home</h1>
+                    <p>Last Walk Home är mitt långtids projekt, ett stereotypisk skräckspel som går ut
+                        på att överleva så länge som möjligt medan man blir jagat.
+                    </p>
+                    <a href="#modal-horror-game">mer info och bilder</a>
+                </section>
+                <div id="modal-horror-game">
+                    <section class="modal-horror-game-window">
+                        <a class="modal-horror-game-close" href="#">X</a>
+                        <div class="horror-game-images">
+                            <img src="css/images/horrorgame-1.png" alt="En mörk bild i en stad av ett 3D-spel">
+                            <img src="css/images/horrorgame-2.png" alt="En mörk bild i en park av ett 3D-spel">
+                            <img class="only-fullscreen-images" src="css/images/horrorgame-4.png" alt="En ljus bild i en stad av ett 3D-spel">
+                            <img class="only-fullscreen-images" src="css/images/horrorgame-5.png"   alt="En ljus bild på några hus av ett 3D-spel"> 
+                        </div>
+                        <h2>Last Walk Home</h2>
+                        <p>Last Walk Home är mitt långtidsprojekt, ett stereotypisk skräckspel som går ut
+                            på att överleva så länge som möjligt medan man blir jagat.<br>
+                            Last Walk Home är fortfarande i en väldigt tidigt utvecklingsfas, alla 3D-objekt i Spelet
+                            har jag skapat i Blender och hittils är bara världen och spelarens rörelse och styrning klar.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer class="footer">
+        <div class="footer-icon">
+            <img src="css/images/phone.png" alt="ett telefonsymbol">
+            <p><strong>Mobil</strong><br>072 150 53 53</p>
+        </div>
+        <div class="footer-icon">
+            <img src="css/images/mail.png" alt="ett mailsymbol">
+            <p><strong>E-mail</strong><br>Olivia.Walter.28@gmail.com</p>
+            <p class="mail-text"></p>
+        </div>
+        <div class="footer-icon">
+            <a href="https://www.linkedin.com/in/olivia-walter-49b758224/">
+                <img src="css/images/linkedin.png" alt="ett LinkedInsymbol">
+            </a>
+            <p class="linkedIn"><strong>LinkedIn</strong></p>
+        </div>
+    </footer>
+</body>
+</html>

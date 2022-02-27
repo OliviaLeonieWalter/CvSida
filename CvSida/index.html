@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/homepage-css.css">
+    <title>OliviaWalterCvSida-home</title>
+    <script src="javaScript/EasterEgg.js"></script>
+</head>
+<script>
+function OnClick() {
+    document.body.style.backgroundColor = "#426b4e";
+    document.getElementById("main").style.backgroundColor = "#426b4e";
+}
+</script>
+<body>
+    <header class="navbar">
+        <a class="logo-name" href= #>Olivia Walter</a>
+        <nav>
+            <ul class="nav-items">
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="om-mig.html">Om mig</a></li>
+                <li><a href="CV.html">CV</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="webbriktlinjer.html">Riktlinjer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div id="easteregg-modal">
+            <section class="easteregg-modal-window" >
+                <h2>Bajs? moget...</h2>
+                <p>(ladda om sidan för att deaktivera detta fönster)</p>
+            </section>
+        </div>
+        <section class="hero">
+            <div class="hero-content">
+                <img id="profil-picture" src="css/images/MyPhotoBlackAndWhite1.JPG" alt="En bild på Olivia Walter">
+                <div class="overlapping info-squares">
+                    <div class="info-square-title">
+                        <h1>Välkommen</h1>
+                            <p class="info-squares-content">Tack för att du har klickat in dig på min websida.
+                                Jag hoppas att jag är den som du letar efter, och hoppas på att vi hörs framöver.
+                                Mina kontaktuppgifter hittar du längst ner på denna sida eller under Kontakt.
+                                Ha en bra dag.<br><strong> Olivia Walter</strong></p>
+                    </div>
+                    <div class="info-square-title">
+                        <h1>Kompetenser</h1>
+                            <ul class="info-squares-content">
+                                <li>Programering av C# .NET</li>
+                                <li>Programmering av SQL databaser</li>
+                                <li>Frontend programmering med HTML5 och CSS3</li>
+                                <li>Grundläggande kunskaper i agila metoder</li>
+                                <li>Flytande i tyska</li>
+                            </ul>
+                    </div>
+                    <div class="info-square-personal info-square-title">
+                        <h1>Personliga egenskaper</h1>
+                        <ul class="info-squares-content">
+                            <li>Noggrann</li>
+                            <li>Diciplinerat</li>
+                            <li>Snabblärd</li>
+                            <li>Flexibel</li>
+                            <li>Funkar bra i grupp eller enskild</li>
+                            <li>Service-minded</li>
+                            <li>Problemlösnings-orienterad</li>
+                            <li>Positiv</li>
+                            <li>Utvecklingssträvande</li>
+                        </ul>
+                    </div>
+                </div>
+                <img class="overlapping" onclick="OnClick()" id="nature-picture" src="css/images/Naturbild.jpg" alt="En landskapsbild">
+            </div>
+        
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-icon">
+            <img src="css/images/phone.png" alt="ett telefonsymbol">
+            <p><strong>Mobil</strong><br>072 150 53 53</p>
+        </div>
+        <div class="footer-icon">
+            <img src="css/images/mail.png" alt="ett mailsymbol">
+            <p><strong>E-mail</strong><br>Olivia.Walter.28@gmail.com</p>
+            <p class="mail-text"></p>
+        </div>
+        <div class="footer-icon">
+            <a href="https://www.linkedin.com/in/olivia-walter-49b758224/">
+                <img src="css/images/linkedin.png" alt="ett LinkedInsymbol">
+            </a>
+            <p class="linkedIn"><strong>LinkedIn</strong></p>
+        </div>
+    </footer>
+</body>
+</html>
